@@ -191,6 +191,14 @@ https://drive.google.com/drive/folders/1ROF099lC1h_QBtKxhF5c5TuWhIaoTsWr
 
 ## 🖼️ Screenshots
 
+###Home Page
+![Home](images/mainpage.png)
+
+###Trending Section
+![Trending](images/Trendingsection.png)
+
+###Recommendation
+![Recommendation](images/Recommendation.png)
 
 ## 📝 License
 
