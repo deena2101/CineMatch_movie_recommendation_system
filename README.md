@@ -122,7 +122,7 @@ Open your browser and navigate to **http://localhost:3000**
     { "id": 1, "title": "The Dark Knight", "genre": "Action, Crime, Drama", "year": 2008 }
   ]
 }
-
+```
 
 ## 🔗 Frontend-Backend Integration
 
@@ -131,7 +131,7 @@ Open your browser and navigate to **http://localhost:3000**
 3. Vite's dev server proxies `/recommend` and `/movies` requests to Flask
 4. CORS is also enabled on Flask as a fallback
 
-**Flow:**
+## Flow: ##
 ```
 User types movie → React sends POST /recommend → 
 Vite proxy forwards to Flask:5000 → 
@@ -188,16 +188,16 @@ Returns JSON → React renders movie cards
 ## 📹 Live Demo
 
 https://drive.google.com/drive/folders/1ROF099lC1h_QBtKxhF5c5TuWhIaoTsWr
-
+---
 ## 🖼️ Screenshots
 
-###Home Page
+### Home Page
 ![Home](images/mainpage.png)
 
-###Trending Section
+### Trending Section
 ![Trending](images/Trendingsection.png)
 
-###Recommendation
+### Recommendation
 ![Recommendation](images/Recommendation.png)
 
 ## 📝 License
