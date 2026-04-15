@@ -246,4 +246,4 @@ To integrate the real TMDB API:
 
 ## 📝 License
 
-Built for educational and demonstration purposes. Perfect for internship-level AI project showcases.
+Built for educational and demonstration purposes.
