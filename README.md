@@ -122,53 +122,7 @@ Open your browser and navigate to **http://localhost:3000**
     { "id": 1, "title": "The Dark Knight", "genre": "Action, Crime, Drama", "year": 2008 }
   ]
 }
-```
 
----
-
-## 🧠 How TF-IDF and Cosine Similarity Work
-
-### TF-IDF (Term Frequency — Inverse Document Frequency)
-
-TF-IDF converts text into numerical vectors that represent the importance of words.
-
-**Formula:**
-```
-TF-IDF(word, doc) = TF(word, doc) × IDF(word)
-```
-
-- **TF (Term Frequency):** How often a word appears in a specific document.
-  ```
-  TF = (Number of times word appears in document) / (Total words in document)
-  ```
-
-- **IDF (Inverse Document Frequency):** How rare/unique a word is across ALL documents.
-  ```
-  IDF = log(Total number of documents / Number of documents containing the word)
-  ```
-
-**Why it works:** Common words like "the" or "movie" get low scores (they appear everywhere). Unique words like "spaceship" or "heist" get high scores — making them better at distinguishing content.
-
-### Cosine Similarity
-
-Cosine Similarity measures how similar two documents are by computing the cosine of the angle between their TF-IDF vectors.
-
-**Formula:**
-```
-cosine_similarity(A, B) = (A · B) / (||A|| × ||B||)
-```
-
-- **Result = 1.0:** Documents are identical
-- **Result = 0.0:** Documents are completely different
-- **Result = 0.5:** Documents share moderate similarity
-
-**In our system:**
-1. Each movie's genre + description is combined into a text feature
-2. TF-IDF converts all 50 movies into numerical vectors
-3. Cosine similarity computes a 50×50 matrix of pairwise similarities
-4. For a given movie, we sort all others by similarity and return the top 5
-
----
 
 ## 🔗 Frontend-Backend Integration
 
@@ -218,19 +172,6 @@ Returns JSON → React renders movie cards
 
 ---
 
-## 🔮 Extending with TMDB (Future)
-
-To integrate the real TMDB API:
-
-1. Get an API key from [themoviedb.org](https://www.themoviedb.org/settings/api)
-2. Replace the `movies_data.py` dataset with TMDB API calls
-3. Use TMDB poster URLs for real movie images
-4. Example TMDB endpoint:
-   ```
-   GET https://api.themoviedb.org/3/search/movie?api_key=YOUR_KEY&query=Inception
-   ```
-
----
 
 ## 🛠️ Tech Stack
 
@@ -243,6 +184,13 @@ To integrate the real TMDB API:
 | Font       | Inter (Google Fonts)          |
 
 ---
+
+## 📹 Live Demo
+
+https://drive.google.com/drive/folders/1ROF099lC1h_QBtKxhF5c5TuWhIaoTsWr
+
+## 🖼️ Screenshots
+
 
 ## 📝 License
 
